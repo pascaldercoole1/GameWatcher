@@ -103,12 +103,12 @@ async def GetGameFromGroup(GroupID, PlaceID):
                 if read_file_in_games_folder(
                     str(GroupID) + "_" + str(PlaceID)) == formatted_time:
                   print("No Update!", Game_name)
-                  await SendMessage(1188470434811891873,
+                  await SendMessage(1221145193181483038,
                                     f"No Update Detected! for {Game_name}\n")
                 else:
                   print("Update Detected!")
                   await SendMessage(
-                      1188470663065895082,
+                      1221145193181483038,
                       f"Update Detected for {Game_name}\n||https://www.roblox.com/games/{PlaceID}|| \n -> <@&1188447404538744842>"
                   )
                   if edit_file_in_games_folder(
